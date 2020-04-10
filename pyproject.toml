@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyMetakitDefinitionString"
+# version = 0.1
+authors = [{name = "KOLANICH"}]
+description = "Parses metakit definition string"
+readme = "ReadMe.md"
+keywords = ["metakit", "metakit4", "database", "parser"]
+license = {text = "Unlicense"}
+classifiers = [
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.4"
+dependencies = [
+	"UniGrammarRuntime" # @ https://codeberg.org/UniGrammar/UniGrammarRuntime.py
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://codeberg.org/prebuilder/pyMetakitDefinitionString"
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [
+	"pyMetakitDefinitionString",
+	"pyMetakitDefinitionString.*",
+]
+namespaces = false
