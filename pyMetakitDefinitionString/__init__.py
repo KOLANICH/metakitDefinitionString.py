@@ -1,6 +1,9 @@
 __all__ = ("parse",)
 
 from pathlib import Path
+from warnings import warn
+
+warn("We have moved from M$ GitHub to https://codeberg.org/prebuilder/pyMetakitDefinitionString , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 from UniGrammarRuntime.ParserBundle import ParserBundle
 
